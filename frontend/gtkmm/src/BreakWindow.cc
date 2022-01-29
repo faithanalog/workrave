@@ -73,7 +73,7 @@ using namespace workrave;
  *  \param control The controller.
  */
 BreakWindow::BreakWindow(BreakId break_id, HeadInfo &head, BreakFlags break_flags, GUIConfig::BlockMode mode)
-  : Gtk::Window(Gtk::WINDOW_TOPLEVEL)
+  : Gtk::Window(Gtk::WINDOW_POPUP)
   , block_mode(mode)
   , break_flags(break_flags)
   , frame(NULL)
